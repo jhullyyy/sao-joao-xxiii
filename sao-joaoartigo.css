@@ -1,0 +1,186 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffff;
+  color: #000;
+  cursor: url("papa-joao-xxiii-cursor.png"), auto;
+}
+
+#config-nav { 
+  background-color: #92310b;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  transition: background-color 0.5s ease;
+  overflow: auto;
+}
+#config-nav:hover {
+  background-color: #dfa44e;
+}
+#nav-itens {  
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.itens-da-lista { 
+  font-size: 20px;
+  margin-top: 40px;
+  font-family: "Kanit", serif;
+  font-style:normal;
+  font-size: 25px;
+  text-shadow: 2px 2px 3px #464444;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+#div-titulo-header{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    justify-items: center;
+    background-image: url(img-divv-joaoxxiii.png);
+}
+#titulo-principal-header {
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-size: 75px;
+  color: #ffff;
+  text-shadow: 2px 2px 3px #282525c8;
+  margin-top: 150px;
+  animation: 
+  sao-joao-xxiii-animate 1.5s infinite ease-in-out;
+}
+@keyframes sao-joao-xxiii-animate {
+50% {
+   transform: translateY(-3%)
+}
+}
+h3{
+    font-family: "Kanit", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #282525c8;
+}
+#paragrafo-historia{
+  background-color: #dfa44e;
+  height: 440px;
+  width: 640px;
+  border-radius: 20px;
+}
+.titulo-hist-missao-curio{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: "Kanit", serif;
+    font-style: normal;
+    color: #3d170b;
+    text-shadow: 2px 2px 3px #dfa54e73;
+}
+.paragrafo-hist-missao-curio{
+    font-size: 19px;
+    text-align: left;
+    font-family: sans-serif;
+    padding-left: 20px; 
+}
+li{
+  margin-bottom: 7px;
+  list-style: none;
+}
+.img-hist-missao-curio{ 
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+.figure-hist-missao-curio{ 
+    float: right;
+    max-width: 100%;
+}
+#footer{
+    background-color: #dfa44e;
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    height: 200px;
+    margin-top: 50px;
+    align-items: center;
+}
+#footer-referencias{
+  margin-left: 50px;
+  font-size: 50px;
+  font-family: "Kanit", serif;
+  font-style: normal;
+  color: #3d170b;
+  text-shadow: 2px 2px 3px #dfa54e73;
+}
+#links-do-footer{
+  align-items: center;
+  justify-content: center;
+
+}
+.link{
+  text-decoration:underline;
+  font-size: 19px;
+  font-family: sans-serif;
+  color: #ffff;
+}
+ /* Sem alterações na estilização principal, apenas adaptando no @media */
+@media (max-width: 768px) {
+  #config-nav {
+    display: none;
+  }
+  .itens-da-lista {
+      font-size: 18px; /* Reduz o tamanho da fonte */
+  }
+  #div-titulo-header {
+      height: auto; /* Deixa o cabeçalho se ajustar ao conteúdo */
+      background-size: cover; /* Mantém a imagem proporcional */
+      margin-bottom: 10px;
+  }
+  #titulo-principal-header {
+      font-size: 35px; /* Reduz tamanho do título */
+      margin-top: 0px;
+  }
+  h3 {
+      font-size: 18px;
+  }
+  .img-hist-missao-curio {
+      max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho da tela */
+      padding: 0; /* Remove padding para aproveitar melhor o espaço */
+  }
+  .titulo-hist-missao-curio {
+      font-size: 30px; /* Ajusta tamanho dos títulos nas seções */
+      margin-left: 20px;
+  }
+  .paragrafo-hist-missao-curio {
+    font-size: 16px;
+    padding-left: 0px;
+    margin: 10px 5px 5px 5px; 
+  }
+  #footer {
+      flex-direction: column; /* Reorganiza o footer no mobile */
+      gap: 20px;
+      padding: 20px;
+      height: 300px;
+  }
+  #footer-referencias {
+      font-size: 24px; /* Ajusta o tamanho do texto do footer */
+      margin: 0 auto;
+  }
+  .link {
+      font-size: 16px;
+  }
+}
+
+
+
